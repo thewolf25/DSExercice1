@@ -1,13 +1,13 @@
 function getUser(id, callback) {
     setTimeout(() => {
-        console.log('Reading  a user from a database...');
-        callback({ id: id, gitHubUsername: 'abc' });
+        console.log('Getting user ...  ');
+        callback({ id: id, gitHubUsername: 'mehdi' });
     }, 2000)
 }
 
 function getRepositories(username, callback) {
     setTimeout(() => {
-        console.log('Calling GitHub API...');
+        console.log('Getting Repository ... ');
         callback(['repo1', 'repo2', 'repo3']);
     }, 2000);
 }
@@ -15,7 +15,7 @@ function getRepositories(username, callback) {
 
 function getBrunch(repo, callback) {
     setTimeout(() => {
-        console.log('Getting commits for a GitHub repo...');
+        console.log('Getting commits ...');
         callback(['commit1', 'commit2', 'commit3']);
     }, 2000)
 }
